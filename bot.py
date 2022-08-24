@@ -3,9 +3,9 @@ import time
 
 def add():
     pyautogui.press('win')
-    pyautogui.typewrite('class')
+    pyautogui.typewrite('cass',interval=0.1)
+    time.sleep(0.2)
     pyautogui.press('enter',interval=0.3)
-    pyautogui.hotkey('down')
     pyautogui.hotkey('ctrl','a')
     pyautogui.hotkey('ctrl','c')
 add()

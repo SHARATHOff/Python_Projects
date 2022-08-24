@@ -3,10 +3,11 @@
 #    print(("*")," "*10,("*"))
 #    if i==4:
  #       for j in range(1):
-  #          print("*",end='')
-coordinates = []
-
-for x in range(11):
-  for y in range(11):
-    coordinates.append((x, y))
-    print(coordinates)
+ #          print("*",end='')
+s="thank you ranjana sharath "
+#s =s.split()
+#print(s)
+from distutils.util import subst_vars
+import sys
+sys.stdout.write(s)
+sys.stderr.write(s)
